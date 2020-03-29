@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b000000"
+    android:orientation="vertical"
+    android:tag="layout/dialog_download_0">
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/ripple_bng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="#ffeb3b"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_logo_trans" />
+    </com.skyfishjy.library.RippleBackground>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_close"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_primary_btn_round"
+        android:onClick="onClick"
+        android:text="@string/close"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="@string/your_request_accepted"
+        android:textColor="#ffffff" />
+</RelativeLayout>
